@@ -19,11 +19,9 @@ Testing Java and Maven configured properly:
 1. Import sample code from https://github.com/chaitanyaallu/SpringbootWithJenkins.git
 2. Open terminal, navigate to the project and hit mvn clean test
 3. Create a new free style project in Jenkins, configure and build>Add build step>Execute shell
-
-Add: first two lines may be optional
-export MAVEN_HOME=/Users/chaitu/eclipse-workspace/maven
-export PATH=$PATH:$MAVEN_HOME/bin
-cd /Users/chaitu/eclipse-workspace/SpringbootwithJenkins
-mvn clean test
-
+4. Add: (First two commands may be optional)
+        1. export MAVEN_HOME=/Users/chaitu/eclipse-workspace/maven
+        2. export PATH=$PATH:$MAVEN_HOME/bin
+        3. cd /Users/chaitu/eclipse-workspace/SpringbootwithJenkins
+        4. mvn clean test
 4. Open the free style project, hit build now and in build history go to console output for the results.
